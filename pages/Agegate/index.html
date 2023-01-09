@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="cursor"></div>
+
+        <section class="main">
+            <h1>Are you over 21?</h1>
+            <checkbox>Yes</checkbox>
+            <checkbox>No</checkbox>
+        </section>
+
+        <script type="text/javascript">
+        const cursor = document.querySelector(".cursor")
+        var timeout;
+
+        // cursor follows the mouse
+
+        document.addEventListener("mousemove", (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+
+            cursor.style.top = y + "px";
+            cursor.style.left = x + "px";
+            cursor.style.display = "block";
+
+            // cursor when stopped
+            function mouseStopped(){
+                cursor.style.display = "none";
+            }
+            clearTimeout(timeout);
+            timeout = setTimeout(mouseStopped, 2000);
+        });
+
+        // cursor after mouseout
+        document.addEventListener("mouseout", () => {
+            cursor.style.display = "none";
+        })
+        
+        </script>
+    </body>
+</html>
