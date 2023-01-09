@@ -7,7 +7,7 @@ const about = () => {
   return (
     <main className={darkMode ? "dark" : ""}>
       <section className=' min-h-screen dark:bg-gray-800'>
-          <nav className='lg:text-4xl md:text-2xl sm:text-lg sm:text-center sm:px-10 flex justify-between md:mx-auto bg-gradient-to-r from-green-500 to-purple-900 rounded-lg'>
+          <nav className='lg:text-4xl md:text-2xl sm:text-lg sm:text-center sm:px-10 flex justify-evenly md:mx-auto bg-gradient-to-r from-green-500 to-purple-900 rounded-lg'>
             {/* <h1 className='text-2xl bg-gradient-to-r from-green-500 to-green-900 rounded-md text-purple-600'>Reggie and Dro</h1> */}
             <ul className='flex items-center'>
               <li className=' text-purple-700 px-4 py-2 hover:animate-pulse hover:brightness-200 font-extrabold'><a href="/">Reggie and Dro</a></li>
