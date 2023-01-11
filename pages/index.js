@@ -4,12 +4,12 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillInstagram } from 'react-icons/ai'
 import Image from "next/image";
 import Shop1 from "../public/Shop1.jpg";
-import Mix1 from "../public/Mix1.jpg";
 import Swag1 from "../public/Swag1.jpg";
 import Lounge1 from "../public/Lounge1.jpg";
 import Rndcard from "../public/Rndcard.jpg";
 import { useState } from "react";
 import Bombay from "../public/flowerpictures/Bombay.jpg"
+import Navbar from './Navbar';
 
 export default function Home() {
 
@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
       <main className=" bg-slate-300 px-10 md:px-10 lg:px-40 dark:bg-gray-900">
         <section className=' min-h-screen'>
-        <nav className='lg:text-4xl md:text-2xl sm:text-lg sm:text-center sm:tracking-wider  flex justify-evenly md:mx-auto bg-gradient-to-r from-green-500 to-purple-900 rounded-lg'>
+        <nav className='lg:text-4xl md:text-2xl sm:text-lg sm:text-center sm:px-10 flex justify-evenly md:mx-auto bg-gradient-to-r from-green-500 to-purple-900 rounded-lg'>
             {/* <h1 className='text-2xl bg-gradient-to-r from-green-500 to-green-900 rounded-md text-purple-600'>Reggie and Dro</h1> */}
             <ul className='flex items-center'>
               <li className=' text-purple-700 px-4 py-2 hover:animate-pulse hover:brightness-200 font-extrabold'><a href="/">Reggie and Dro</a></li>
@@ -32,7 +32,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-white'/>
               </li>
               <li><a className='text-purple-600 px-4 py-2 hover:animate-pulse hover:brightness-200 font-extrabold' href="#">Gear</a></li>
-              <li><a className='text-green-600 px-4 py-2 hover:animate-pulse hover:brightness-200 font-extrabold' href='/smoke'>Smoke</a></li>
+              <li><a className='text-green-600 px-4 py-2 hover:animate-pulse hover:brightness-200 font-extrabold' href="/smoke">Smoke</a></li>
               <li><a className='text-green-700 px-4 py-2 hover:animate-pulse hover:brightness-200 font-extrabold' href='/about'>How it is legal?</a></li>
             </ul>
           </nav>
@@ -59,8 +59,8 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <a href="/about">
-              <Image className="" src={Bombay} width={250} height={250}/>
+              <a href="/smoke">
+              <Image className="items-center" src={Bombay} width={250} height={250}/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-indigo-400'>Enjoy how you like with</h3>
               <p className='py-1 dark:text-indigo-400'>Edibles</p>
               <p className='py-1 dark:text-indigo-400'>Vapes</p>
