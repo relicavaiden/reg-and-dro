@@ -60,10 +60,10 @@ export default function Home() {
           <div>
             <h3 className="text-2xl py-5 leading-10 flex justify-center dark:text-indigo-400">See the best views of the shop</h3>
           </div>
-          <div className="lg:flex gap-10">
+          <div className="lg:flex md:flex gap-10">
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <a href="/smoke">
-              <Image className="items-center" src={Bombay} width={250} height={250}/>
+              <Image className="" src={Bombay} width={250} height={250}/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-indigo-400'>Enjoy how you like with</h3>
               <p className='py-1 dark:text-indigo-400'>Edibles</p>
               <p className='py-1 dark:text-indigo-400'>Vapes</p>
@@ -89,7 +89,8 @@ export default function Home() {
               <p className='py-1 dark:text-indigo-400'>Bongs on Deck</p>
               <p className='py-1 dark:text-indigo-400'>Jars of the best</p>
             </div>
-
+            </div>
+            <div>
             <div className='bg-purple-500 rounded-md text-center py-3 border-2'>
               <h3 className='text-amber-400 text-3xl'>Flagship Location</h3>
             </div>
