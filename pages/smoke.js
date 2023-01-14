@@ -62,10 +62,10 @@ export default function smoke() {
                 </div>
             </div>
 
-            <div className='w-60 p-2 bg-white rounded-xl transform transition-all hover:translate-y-2 duration-500 shadow-xl hover:shadow-2xl'>
+            <div className='sm:flex-nowrap w-60 p-2 bg-white rounded-xl transform transition-all hover:translate-y-2 duration-500 shadow-xl hover:shadow-2xl'>
                 <Image src={Blueberry1} />
                 <div className='p-2'>
-                    <h2 className='font-bold text-lg'>BlueberryKushMints</h2>
+                    <h2 className='font-bold text-lg md:object-scale-down'>BlueberryKushMints</h2>
                     <p>Product Details</p>
                 </div>
             </div>
