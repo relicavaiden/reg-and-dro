@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { BsDistributeVertical, BsFillMoonStarsFill, BsMapFill, BsFillCalendarRangeFill, BsFillPhoneVibrateFill, BsMailbox2 } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillInstagram } from 'react-icons/ai'
 import Image from "next/image";
 import Shop1 from "../public/Shop1.jpg";
@@ -36,6 +36,9 @@ export default function Home() {
               <li><a className='text-green-700 px-4 py-2 hover:animate-pulse hover:brightness-200 font-extrabold' href='/about'>How it is legal?</a></li>
             </ul>
           </nav>
+          <h1 className='text-4xl text-center py-4 text-green-900'>
+            Free and Legal Weed
+          </h1>
           <div className='flex justify-center py-2'>
           <Image className=''src={Rndcard} width={500} height={500} />
           </div>
@@ -86,9 +89,28 @@ export default function Home() {
               <p className='py-1 dark:text-indigo-400'>Bongs on Deck</p>
               <p className='py-1 dark:text-indigo-400'>Jars of the best</p>
             </div>
+
+            <div className='bg-purple-500 rounded-md text-center py-3 border-2'>
+              <h3 className='text-amber-400 text-3xl'>Flagship Location</h3>
+            </div>
+            <div className='py-2'>
+                <ul className='row-span-1'>
+                  <BsMapFill className='text-3xl dark:text-indigo-400' /><li className='text-amber-600 dark:text-indigo-400'>
+                    19141 Stone Oak Pkwy Suite#403 San Antonio, TX 78258
+                  </li>
+                  <BsFillCalendarRangeFill className='text-3xl dark:text-indigo-400' /> <li className='text-amber-600 dark:text-indigo-400'>
+                    Hours: Everyday from 10am to 7pm
+                  </li>
+                  <BsMailbox2 className='text-3xl dark:text-indigo-400' /><li className='text-amber-600 dark:text-indigo-400'>
+                    Email: high@reggieanddro.com
+                  </li>
+                  <BsFillPhoneVibrateFill className='text-3xl dark:text-indigo-400' /><li className='text-amber-600 dark:text-indigo-400'>
+                    Phone: 210-570-7507</li>
+                </ul>
+              </div>
           </div>
           <footer>
-          {/* <iframe width="440" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%2019141%20Stone%20Oak%20Pkwy%20%23403%20San%20Antonio%2C%20TX%2078258+(Reggie%20and%20Dro)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> */}
+          <iframe width="440" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%2019141%20Stone%20Oak%20Pkwy%20%23403%20San%20Antonio%2C%20TX%2078258+(Reggie%20and%20Dro)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </footer>
         </section>
       </main>
